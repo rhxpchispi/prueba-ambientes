@@ -9,6 +9,13 @@ patches:
         - op: replace
           path: /spec/replicas
           value: 5
+  - target:
+      kind: Service
+      name: myapp-service
+    patch: |
+      - op: replace
+        path: /spec/ports/0/port
+        value: 30035
 images:
   - name: rhxpchispi/myapp
     newTag: main

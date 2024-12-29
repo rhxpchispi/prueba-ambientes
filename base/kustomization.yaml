@@ -3,7 +3,7 @@ kind: Kustomization
 
 resources:
   - ./deployment.yaml
-  - ./clusterip.yaml 
+  - ./nodeport.yaml 
 
 patches:
 - path: "resource-patch.yaml"
