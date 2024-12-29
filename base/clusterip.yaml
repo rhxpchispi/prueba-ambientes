@@ -5,10 +5,8 @@ metadata:
   labels:
     role: myapp
 spec:
-  type: NodePort
   ports:
   - port: 3000
     name: http
-    nodePort: 30036
   selector:
     role: myapp
