@@ -13,4 +13,4 @@ images:
   - name: rhxpchispi/myapp
     newTag: dev
 
-namespace: myapp-dev
+namespace: dev
