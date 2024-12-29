@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-deployment
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        role: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: rhxpchispi/myapp:5.0
+        imagePullPolicy: IfNotPresent        
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "200m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
