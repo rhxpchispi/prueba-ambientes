@@ -15,7 +15,8 @@ patches:
     patch: |
       - op: replace
         path: /spec/ports/0/port
-        value: 30035
+        value: 30045
+
 images:
   - name: rhxpchispi/myapp
     newTag: main
