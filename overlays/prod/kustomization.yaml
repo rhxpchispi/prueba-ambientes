@@ -14,7 +14,7 @@ patches:
       name: myapp-service
     patch: |
       - op: replace
-        path: /spec/ports/0/port
+        path: /spec/ports/0/nodePort
         value: 30045
 
 images:
