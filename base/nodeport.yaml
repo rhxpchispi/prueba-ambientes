@@ -9,4 +9,4 @@ spec:
     name: http
     nodePort: 8080
   selector:
-    app: myapp
+    role: myapp
